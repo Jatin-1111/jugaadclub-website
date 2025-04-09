@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Commons from "./Commons";
 import { Toaster } from "react-hot-toast";
+import Navbar from "@/components/navbar";
+import { Footer } from "@/components/ComponentExporter";
 
 export const metadata: Metadata = {
   title: "Jugaad - Robotic club of UIET",
@@ -17,8 +19,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <Navbar />
         <Toaster position="bottom-right" />
-        <Commons>{children}</Commons>
+        {/* <Commons>{children}</Commons> */}
+        {children}
+        <Footer />
       </body>
     </html>
   );

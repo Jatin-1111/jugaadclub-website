@@ -8,23 +8,19 @@ const Commons = ({
 }: Readonly<{
   children: React.ReactNode;
 }>) => {
-
   return (
     <>
       <Navbar />
-      <main
-        className="w-full min-h-screen bg-black flex flex-row-reverse items-start justify-start"
-        
-      >
+      <main className="w-full min-h-screen bg-black flex flex-row-reverse items-start justify-start">
         <Sidebar />
         <div
           className="w-full bg-transparent h-screen text-white relative"
           id="scrollable-container-parallax"
         >
           {children}
-          <Footer />
         </div>
       </main>
+      <Footer />
     </>
   );
 };

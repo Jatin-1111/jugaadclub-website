@@ -7,7 +7,7 @@ import Avatars from "./avatar/designers";
 
 type Props = {};
 
-const footer = (props: Props) => {
+const Footer = (props: Props) => {
   return (
     <>
       <footer className="w-full pt-1 pb-60 md:pb-14 bg-black mt-10">
@@ -83,4 +83,4 @@ const footer = (props: Props) => {
   );
 };
 
-export default footer;
+export default Footer;
